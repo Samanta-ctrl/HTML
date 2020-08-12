@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Forms</title>
+	<style type="text/css">
+		div
+		{
+			background-color: lightsalmon;
+			height: 150px;
+			width: 50%;
+			border-radius: 20px; 
+			margin: 50px 10px;
+		}
+		form
+		{
+			padding: 40px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<form method="post">  <!-- post method used to push the data to sever -->
+			<label for="usn">User Name</label>
+			<input type="text" name="u1" id="usn">
+			<br><br>
+			<label for="psw">Password</label>
+			<input type="password" name="p1" id="psw">
+			<br><br>
+			<!--<label for="sbm">Submit</label>  -->
+			<input type="Submit" name="s1" value="Submit">
+		</form>
+	</div>
+<!-- --------------------------------------------------------------------------------------------- -->
+
+	<!-- Form with alignment -->
+	<div>
+		<form method="post" action="http://www.amazon.com">
+			<table>
+				<tr>
+					<td><label for="usn">User Name</label></td>
+					<td><input type="text" name="u1" id="usn"></td>
+				</tr>
+
+				<tr>
+					<td><label for="psw">Password</label></td>
+					<td><input type="password" name="p1" id="psw"></td>
+				</tr>
+
+				<tr>
+					<td colspan="2" align="center"><input type="Submit" name="s1" value="Submit"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+	<!-- Select and Option tag -->
+	<div>
+		<form>
+			<label>Select City</label>
+			<select>
+				<option>    Select   </option>
+				<option>Kolkata</option>
+				<option>Bangalore</option>
+				<option>Pune</option>
+				<option>Mumbai</option>
+				<option>Hydrabad</option>
+				<option>Chennai</option>
+			</select>
+		</form>
+	</div>
+
+	<!-- Textarea tags(for commenting)  -->
+	<div>
+		<form>
+			<label>Enter your Message</label>
+			<textarea rows="5" cols="10"></textarea>
+		</form>
+	</div>
+
+	<!-- datalist tag (used to create dropdown list(searching))-->
+	<div>
+		<form>
+			<label>Select a city</label>
+			<input list="city" name="c1">
+			<datalist id="city">
+				<option>Kolkata</option>
+				<option>Bangalore</option>
+				<option>Pune</option>
+				<option>Mumbai</option>
+				<option>Hydrabad</option>
+				<option>Chennai</option>
+			</datalist>
+		</form>
+	</div>
+
+
+	<h1>Form input types</h1>
+	<!--type=text -->
+	<div>
+		<form>
+			<label>Username</label>
+			<input type="text" name="t1"> 
+		</form>
+	</div>
+
+	<!-- type=password -->
+	<div>
+		<form>
+			<label>Password</label>
+			<input type="password" name="t1"> 
+		</form>
+	</div>
+
+	<!-- type=submit -->
+	<div>
+		<form>
+			<label>Username</label>
+			<input type="text" name="t1"> 
+			<input type="Submit" name="s1" value="Submit"> 
+		</form>
+	</div>
+
+	<!-- type=reset -->
+	<div>
+		<form>
+			<label>Username</label>
+			<input type="text" name="t1"> 
+			<input type="reset" name="r1" value="Reset"> 
+		</form>
+	</div>
+
+<!-- type=radio (for radio button, name should be same-->
+	<div>
+		<form>
+			<label>Java is Easy?</label>
+			<input type="radio" name="r1">Yes 
+			<input type="radio" name="r1">No
+		</form>
+	</div>
+
+<!-- type=checkbox -->
+	<div>
+		<form>
+			<label>Select Hobbies</label>
+			<input type="checkbox" name="c1" checked="">Eating  <!-- here b default eating is selected as it is checked -->
+			<input type="checkbox" name="c1">Sleeping
+			<input type="checkbox" name="c1">Singing 
+			<input type="checkbox" name="c1">Dancing 
+		</form>
+	</div>
+
+
+<h1>HTML Input types</h1>
+<!-- color -->
+	<div>
+		<form>
+			<label>Select color</label>
+			<input type="color" name="c1">
+		</form>
+	</div>
+
+<!-- date -->
+	<div>
+		<form>
+			<label>Select Date</label>
+			<input type="date" name="d1">
+		</form>
+	</div>
+
+<!--Date and time -->
+	<div>
+		<form>
+			<label>Select date and time</label>
+			<input type="datetime-local" name="dt1">
+		</form>
+	</div>
+
+<!--Time -->
+<div>
+	<form>
+		<label>Select time</label>
+		<input type="time" name="t1">
+	</form>
+</div>
+
+<!--Month -->
+	<div>
+		<form>
+			<label>Select Month</label>
+			<input type="Month" name="m1">
+		</form>
+	</div>
+
+
+<!--Week -->
+	<div>
+		<form>
+			<label>Select Week</label>
+			<input type="Week" name="w1">
+		</form>
+	</div>
+
+
+<!--E-mail-->
+	<div>
+		<form>
+			<label>Select E-mail</label>
+			<input type="email" name="e1">
+			<input type="Submit" name="s1">
+		</form>
+	</div>
+
+
+<!--Search -->
+	<div>
+		<form>
+			<label>Select here</label>
+			<input type="Search" name="s1">
+			<input type="submit" name="sb">
+		</form>
+	</div>
+
+
+<!--Number-->
+	<div>
+		<form>
+			<label>Select Your Age</label>
+			<input type="Number" name="n1" min="20" max="25">
+			<input type="submit" name="s1">
+		</form>
+	</div>
+
+
+<!-- Url -->
+	<div>
+		<form>
+			<label>Enter your Website</label>
+			<input type="Url" name="m1">
+			<input type="submit" name="s1">
+		</form>
+	</div>
+</body>
+</html>

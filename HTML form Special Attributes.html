@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML form Special Attributes</title>
+	<style type="text/css">
+		div
+		{
+			background-color: lightsalmon;
+			height: 150px;
+			width: 50%;
+			border-radius: 20px; 
+			margin: 50px 10px;
+		}
+		form
+		{
+			padding: 40px;
+		}
+	</style>
+</head>
+<body>
+	<!-- how to display default values for textboxes -->
+	<div>
+		<form>
+			<label>UserName</label>
+			<input type="text" name="b1" value="Soumen">
+		</form>
+	</div>
+
+	<!-- Read only(can't edited)-->
+	<div>
+		<form>
+			<label>UserName</label>
+			<input type="text" name="b1" value="Soumen" readonly="readonly">
+		</form>
+	</div>
+
+	<!-- disabled -->
+	<div>
+		<form>
+			<label>UserName</label>
+			<input type="text" name="b1" value="Soumen" disabled="disabled">
+		</form>
+	</div>
+<h1>HTML5 form special Attributes</h1>
+	<!-- mandatory text-->
+	<div>
+		<form>
+			<label>UserName*</label>
+			<input type="text" name="b1" required="required">
+			<input type="submit" name=""s1>
+		</form>
+	</div>
+
+		<!-- No validate (no value given)-->
+	<div>
+		<form novalidate="novalidate">
+			<label>UserName*</label>
+			<input type="text" name="b1" >
+			<input type="submit" name="s1">
+		</form>
+	</div>
+
+	<!-- auto focus -->
+	<div>
+		<form>
+			<label>UserName</label>
+			<input type="text" name="b1" autofocus="autofocus">
+			<input type="submit" name="s1">
+		</form>
+	</div>
+
+<!-- Placeholder (alternate for lebel tag) -->
+	<div>
+		<form>
+			<input type="text" name="b1" placeholder="Enter UserName">
+			<input type="submit" name="s1">
+		</form>
+	</div>
+
+<!-- Pattern attribute-->
+	<div>
+		<form>
+			<label>Facebook User Name</label>
+			<input type="text" name="b1" pattern=^[a-z\d\.]{5,}$>
+			<input type="submit" name="s1">
+		</form>
+	</div>
+
+
+
+
+</body>
+</html>
